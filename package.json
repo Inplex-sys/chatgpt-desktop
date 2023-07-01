@@ -1,0 +1,26 @@
+{
+    "name": "chatgpt",
+    "version": "1.0.0",
+    "description": "A simple chatbot assistant",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "build": "electron-builder"
+    },
+    "build": {
+        "appId": "com.chatgpt.assistant",
+        "directories": {
+            "output": "dist"
+        },
+        "win": {
+            "target": "nsis",
+            "icon": "icon.ico"
+        }
+    },    
+    "author": "Inplex-sys",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^25.1.0",
+        "electron-builder": "^22.3.2"
+    }
+}
