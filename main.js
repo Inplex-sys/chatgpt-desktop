@@ -4,7 +4,8 @@ const path = require('path')
 function createWindow () {
     const mainWindow = new BrowserWindow({
         width: 800,
-        height: 600
+        height: 600,
+        autoHideMenuBar: true
     })
 
     mainWindow.loadURL('https://chat.openai.com/auth/login')
