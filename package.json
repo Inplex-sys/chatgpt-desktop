@@ -9,18 +9,27 @@
     },
     "build": {
         "appId": "com.chatgpt.assistant",
+        "files": [
+            "aiprm-extension/**/*",
+            "main.js",
+            "package.json"
+        ],
         "directories": {
-            "output": "dist"
+            "output": "dist",
+            "buildResources": "assets"
         },
         "win": {
             "target": "nsis",
             "icon": "icon.ico"
         }
-    },    
+    },
     "author": "Inplex-sys",
     "license": "CC0-1.0",
     "devDependencies": {
         "electron": "^25.1.0",
         "electron-builder": "^22.3.2"
+    },
+    "dependencies": {
+        "fs-extra": "^11.1.1"
     }
 }
