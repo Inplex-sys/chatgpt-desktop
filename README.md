@@ -2,8 +2,7 @@
 
 ChatGPT in windows including AIPRM in it ( for people who can't install it on firefox )
 
-![image](https://github.com/Inplex-sys/chatgpt-desktop/assets/69421356/b0ea0cce-c887-49bf-a1f3-fb3cdd8b3f6c)
-
+![image](https://github.com/Inplex-sys/chatgpt-desktop/assets/69421356/fe698013-b10e-4718-a70f-b1c15addbf3f)
 
 ## Install the App
 
