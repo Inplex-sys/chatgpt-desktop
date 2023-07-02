@@ -15,3 +15,4 @@ npm run build
 You will see the x64 binary in `dist/`
 
 ### Install from release
+Install by clicking here https://github.com/Inplex-sys/chatgpt-desktop/releases/download/Windows/chatgpt.Setup.1.0.0.exe
