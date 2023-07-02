@@ -1,5 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
+const fs = require('fs-extra')
 
 function createWindow () {
     const mainWindow = new BrowserWindow({
@@ -11,7 +12,13 @@ function createWindow () {
     mainWindow.loadURL('https://chat.openai.com/auth/login')
 
     const { session } = mainWindow.webContents;
-    session.loadExtension(path.join(__dirname, 'aiprm-extension'));
+
+    const extensionSourcePath = path.join(__dirname, 'aiprm-extension');
+    const tempExtensionPath = path.join(app.getPath('temp'), 'aiprm-extension');
+
+    fs.copySync(extensionSourcePath, tempExtensionPath);
+
+    session.loadExtension(tempExtensionPath);
 }
 
 app.whenReady().then(() => {
