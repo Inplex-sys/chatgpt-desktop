@@ -27,7 +27,7 @@
     "license": "CC0-1.0",
     "devDependencies": {
         "electron": "^25.8.4",
-        "electron-builder": "^24.6.4"
+        "electron-builder": "^24.13.3"
     },
     "dependencies": {
         "fs-extra": "^11.1.1"
